@@ -14,7 +14,7 @@ public class DadJokeCommands {
         this.dadJokeClient = dadJokeClient;
     }
 
-    @ShellMethod(key = "random",value = "I will return a random dad joke!")
+    @ShellMethod(key = "random", value = "I will return a random dad joke!")
     public String getRandomDadJoke() {
         DadJokeResponse random = dadJokeClient.random();
         return random.joke();
